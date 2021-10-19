@@ -1,14 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>The Cavern - Place Order</title>
 </head>
 <body>
-    <form action="https://blackstone.roanoke.edu/training/process.php" method="post">
+    <form name = "orderForm" action="https://blackstone.roanoke.edu/training/process.php" method="post">
         <fieldset>
-            <h1 id="header">Order Form</h1>
+            <h1>Order Form</h1>
 
-            <p>Name:<input type="text"></p>
+            <p>Name:<input type="text" name="name" value="Your name"></p>
 
             <label for="entree">Entree</label>
             <select name="entree" id="entree">
@@ -96,7 +97,7 @@
             </div>
 
             <p>Fries</p>
-            <div id="test">
+            <div>
                 <input type="radio" name="fries" id="yes" value="yes">
                 <label for="yes">Yes</label>
             </div>
@@ -108,5 +109,7 @@
             <input type="submit" value="Submit Order"/>
         </fieldset>
     </form>
+
+    <script src="./order.js"></script>
 </body>
 </html>
