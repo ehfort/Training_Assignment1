@@ -12,104 +12,121 @@
             <p>Name:<input type="text" name="name" value="Your name"></p>
 
             <label for="entree">Entree</label>
-            <select name="entree" id="entree">
-                <option>Hamburger</option>
-                <option>Black Bean Burger</option>
-                <option>Spicy Chicken Sandwich</option>
-                <option>Grilled Chicken Sandwich</option>
-                <option>Crispy Chicken Sandwich</option>
-                <option>2x Peanut Butter and Jelly</option>
-                <option>Turkey Wrap</option>
-                <option>Spicy Chicken Wrap</option>
-                <option>Grilled Chicken Wrap</option>
-                <option>Crispy Chicken Wrap</option>
-                <option>Veggie Wrap</option>
-            </select>
-
-            <p>Condiments</p>
             <div>
-                <input type="checkbox" name="ranch" id="ranch" value="ranch">
-                <label for="ranch">Ranch</label>
+                <input type="radio" name="entree" id="burgsand" value="burgsand">
+                <label for="burgsand">Burger or Sandwich</label>
             </div>
             <div>
-                <input type="checkbox" name="honeymustard" id="honeymustard" value="honeymustard">
-                <label for="honeymustard">Honey Mustard</label>
-            </div>
-            <div>
-                <input type="checkbox" name="buffalosauce" id="buffalosauce" value="buffalosauce">
-                <label for="buffalosauce">Buffalo Sauce</label>
-            </div>
-            <div>
-                <input type="checkbox" name="mayo" id="mayo" value="mayo">
-                <label for="mayo">Mayo</label>
-            </div>
-            <div>
-                <input type="checkbox" name="delimustard" id="delimustard" value="delimustard">
-                <label for="delimustard">Deli Mustard</label>
-            </div>
-            <div>
-                <input type="checkbox" name="redroastedhummus" id="redroastedhummus" value="redroastedhummus">
-                <label for="redroastedhummus">Red Roasted Hummus</label>
-            </div>
-            <div>
-                <input type="checkbox" name="ketchup" id="ketchup" value="ketchup">
-                <label for="ketchup">Ketchup</label>
-            </div>
-            <div>
-                <input type="checkbox" name="bbq" id="bbq" value="bbq">
-                <label for="bbq">BBQ</label>
-            </div>
-            <div>
-                <input type="checkbox" name="txpete" id="txpete" value="txpete">
-                <label for="txpete">TX Pete</label>
+                <input type="radio" name="entree" id="wrap" value="wrap">
+                <label for="wrap">Wrap</label>
             </div>
 
-            <p>Cheese</p>
-            <div>
-                <input type="radio" name="cheese" id="american" value="american">
-                <label for="american">American</label>
-            </div>
-            <div>
-                <input type="radio" name="cheese" id="provolone" value="provolone">
-                <label for="provolone">Provolone</label>
-            </div>
 
-            <p>Toppings</p>
-            <div>
-                <input type="checkbox" name="lettuce" id="lettuce" value="lettuce">
-                <label for="lettuce">Lettuce</label>
-            </div>
-            <div>
-                <input type="checkbox" name="tomato" id="tomato" value="tomato">
-                <label for="tomato">Tomato</label>
-            </div>
-            <div>
-                <input type="checkbox" name="redonion" id="redonion" value="redonion">
-                <label for="redonion">Red Onion</label>
-            </div>
-            <div>
-                <input type="checkbox" name="pickles" id="pickles" value="pickles">
-                <label for="pickles">Pickles</label>
-            </div>
-            <div>
-                <input type="checkbox" name="cucumbers" id="cucumbers" value="cucumbers">
-                <label for="cucumbers">Cucumbers</label>
-            </div>
+            <div class="options">
+                <label for="type">Type<br></label>
+                <select name="type-burgsand" id="type-burgsand">
+                    <option>Hamburger</option>
+                    <option>Black Bean Burger</option>
+                    <option>Spicy Chicken Sandwich</option>
+                    <option>Grilled Chicken Sandwich</option>
+                    <option>Crispy Chicken Sandwich</option>
+                    <option>2x Peanut Butter and Jelly</option>
+                </select>
 
-            <p>Fries</p>
-            <div>
-                <input type="radio" name="fries" id="yes" value="yes">
-                <label for="yes">Yes</label>
-            </div>
-            <div>
-                <input type="radio" name="fries" id="no" value="no">
-                <label for="no">No</label>
-            </div>
+                <select name="type-wrap" id="type-wrap">
+                    <option>Turkey Wrap</option>
+                    <option>Spicy Chicken Wrap</option>
+                    <option>Grilled Chicken Wrap</option>
+                    <option>Crispy Chicken Wrap</option>
+                    <option>Veggie Wrap</option>
+                </select>
 
-            <input type="submit" value="Submit Order"/>
+                <p>Condiments</p>
+                <div>
+                    <input type="checkbox" name="ranch" id="ranch" value="ranch">
+                    <label for="ranch">Ranch</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="honeymustard" id="honeymustard" value="honeymustard">
+                    <label for="honeymustard">Honey Mustard</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="buffalosauce" id="buffalosauce" value="buffalosauce">
+                    <label for="buffalosauce">Buffalo Sauce</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="mayo" id="mayo" value="mayo">
+                    <label for="mayo">Mayo</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="delimustard" id="delimustard" value="delimustard">
+                    <label for="delimustard">Deli Mustard</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="redroastedhummus" id="redroastedhummus" value="redroastedhummus">
+                    <label for="redroastedhummus">Red Roasted Hummus</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ketchup" id="ketchup" value="ketchup">
+                    <label for="ketchup">Ketchup</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="bbq" id="bbq" value="bbq">
+                    <label for="bbq">BBQ</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="txpete" id="txpete" value="txpete">
+                    <label for="txpete">TX Pete</label>
+                </div>
+
+                <p>Cheese</p>
+                <div>
+                    <input type="radio" name="cheese" id="american" value="american">
+                    <label for="american">American</label>
+                </div>
+                <div>
+                    <input type="radio" name="cheese" id="provolone" value="provolone">
+                    <label for="provolone">Provolone</label>
+                </div>
+
+                <p>Toppings</p>
+                <div>
+                    <input type="checkbox" name="lettuce" id="lettuce" value="lettuce">
+                    <label for="lettuce">Lettuce</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tomato" id="tomato" value="tomato">
+                    <label for="tomato">Tomato</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="redonion" id="redonion" value="redonion">
+                    <label for="redonion">Red Onion</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="pickles" id="pickles" value="pickles">
+                    <label for="pickles">Pickles</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="cucumbers" id="cucumbers" value="cucumbers">
+                    <label for="cucumbers">Cucumbers</label>
+                </div>
+
+                <p>Fries</p>
+                <div>
+                    <input type="radio" name="fries" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="fries" id="no" value="no">
+                    <label for="no">No</label>
+                </div>
+
+                <input type="submit" value="Submit Order"/>
+            </div>
         </fieldset>
     </form>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./order.js"></script>
 </body>
 </html>

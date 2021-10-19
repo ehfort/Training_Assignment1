@@ -1,9 +1,6 @@
 const form = document.querySelector("form");
 
 function handleSubmitRequest(event) {
-    console.log("handling request");
-    console.log(form);
-
     const hasName = (form.name.value !== "");
     let hasCheese = false;
     for (var i = 0; i < form.cheese.length; i++) {
@@ -21,3 +18,24 @@ function handleSubmitRequest(event) {
     }
 }
 form.addEventListener("submit", handleSubmitRequest);
+
+
+function handleClick(event) {
+    $(".options").show();
+    if (this.id === "burgsand") {
+        $("#type-burgsand").show()
+        $("#type-wrap").hide()
+    }
+    else {
+        $("#type-wrap").show()
+        $("#type-burgsand").hide()
+    }
+}
+
+
+$("input[name='entree']").each(function(index) {
+    console.log($(this).prop("checked"));
+    $(this).on("click", handleClick);
+});
+
+$(".options").hide();
