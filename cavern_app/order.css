@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: #ffe5cc;
+}
+
+#content {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.header {
+    background-color: #70132d;
+    margin: 0;
+}
+
+#header-text {
+    padding: 3px 0 3px 3px;
+}
+
+.white-text {
+    color: #ffffff;
+    margin: 0 0 5px 5px;
+}
+
+.tab-over{
+    margin-left: 25px;
+}
+
+label {
+    font-weight: lighter !important;
+}
+
+#submit-button {
+    color: white;
+    background-color: #0066ff;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    float: right;
+}
