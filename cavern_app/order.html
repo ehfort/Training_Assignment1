@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <form name = "orderForm" action="https://blackstone.roanoke.edu/training/process.php" method="post">
+        <form name = "orderForm" action="https://blackstone.roanoke.edu/Harris/IT_Training/Assignment1/cavern_app/process_order.php" method="post">
 
             <fieldset>
                 <label for="entree"><strong>Entree</strong></label>
@@ -67,43 +67,43 @@
                         <div class="grid-3">
                             <div class="grid-item">
                                 <div>
-                                    <input type="checkbox" name="ranch" id="ranch" value="ranch">
+                                    <input type="checkbox" name="condiment[]" id="ranch" value="Ranch">
                                     <label for="ranch">Ranch</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="honeymustard" id="honeymustard" value="honeymustard">
+                                    <input type="checkbox" name="condiment[]" id="honeymustard" value="Honey Mustard">
                                     <label for="honeymustard">Honey Mustard</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="buffalosauce" id="buffalosauce" value="buffalosauce">
+                                    <input type="checkbox" name="condiment[]" id="buffalosauce" value="Buffalo Sauce">
                                     <label for="buffalosauce">Buffalo Sauce</label>
                                 </div>
                             </div>
                             <div class="grid-item">
                                 <div>
-                                    <input type="checkbox" name="mayo" id="mayo" value="mayo">
+                                    <input type="checkbox" name="condiment[]" id="mayo" value="Mayo">
                                     <label for="mayo">Mayo</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="delimustard" id="delimustard" value="delimustard">
+                                    <input type="checkbox" name="condiment[]" id="delimustard" value="Deli Mustard">
                                     <label for="delimustard">Deli Mustard</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="redroastedhummus" id="redroastedhummus" value="redroastedhummus">
+                                    <input type="checkbox" name="condiment[]" id="redroastedhummus" value="Red Roasted Hummus">
                                     <label for="redroastedhummus">Red Roasted Hummus</label>
                                 </div>
                             </div>
                             <div class="grid-item">
                                 <div>
-                                    <input type="checkbox" name="ketchup" id="ketchup" value="ketchup">
+                                    <input type="checkbox" name="condiment[]" id="ketchup" value="Ketchup">
                                     <label for="ketchup">Ketchup</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="bbq" id="bbq" value="bbq">
+                                    <input type="checkbox" name="condiment[]" id="bbq" value="BBQ">
                                     <label for="bbq">BBQ</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="txpete" id="txpete" value="txpete">
+                                    <input type="checkbox" name="condiment[]" id="txpete" value="TX Pete">
                                     <label for="txpete">TX Pete</label>
                                 </div>
                             </div>
@@ -113,23 +113,23 @@
                             <div class="grid-item">
                                 <label><strong>Toppings</strong></label>
                                 <div>
-                                    <input type="checkbox" name="lettuce" id="lettuce" value="lettuce">
+                                    <input type="checkbox" name="topping[]" id="lettuce" value="Lettuce">
                                     <label for="lettuce">Lettuce</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="tomato" id="tomato" value="tomato">
+                                    <input type="checkbox" name="topping[]" id="tomato" value="Tomato">
                                     <label for="tomato">Tomato</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="redonion" id="redonion" value="redonion">
+                                    <input type="checkbox" name="topping[]" id="redonion" value="Red Onion">
                                     <label for="redonion">Red Onion</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="pickles" id="pickles" value="pickles">
+                                    <input type="checkbox" name="topping[]" id="pickles" value="Pickles">
                                     <label for="pickles">Pickles</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="cucumbers" id="cucumbers" value="cucumbers">
+                                    <input type="checkbox" name="topping[]" id="cucumbers" value="Cucumbers">
                                     <label for="cucumbers">Cucumbers</label>
                                 </div>
                             </div>
@@ -137,11 +137,11 @@
                             <div class="grid-item">
                                 <label><strong>Cheese</strong></label>
                                 <div>
-                                    <input type="radio" name="cheese" id="american" value="american">
+                                    <input type="radio" name="cheese" id="american" value="American">
                                     <label for="american">American</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="cheese" id="provolone" value="provolone">
+                                    <input type="radio" name="cheese" id="provolone" value="Provolone">
                                     <label for="provolone">Provolone</label>
                                 </div>
 
@@ -164,5 +164,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="./order.js"></script>
-    </body>
-    </html>
+    </div>
+</body>
+</html>
